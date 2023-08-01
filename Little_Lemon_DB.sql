@@ -1,1 +1,0 @@
-SELECT * FROM little_lemon_db.Orders;
