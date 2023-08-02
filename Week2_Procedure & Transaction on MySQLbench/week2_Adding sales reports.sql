@@ -10,7 +10,7 @@ WHERE orders.Quantity > 2
 #Task 2 : filter data  cost more than 150
 CREATE VIEW OrdersView2 AS
 SELECT customerInformation.CustomerID, customerInformation.Name, orders.OrderID, orders.Billamount
-FROM customerInformation INNER JOIN orders
+FROM customerInformation INNER JOIN orders on customerInformation.id = orders.id  
 WHERE orders.Billamount > 150
 ORDER BY orders.Billamount DESC;
 
